@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DemoCommerceBestPractice Suite">
+    <listeners>
+        <listener class-name="utils.Listeners"/>  <!-- the directory of the listeners class in the project-->
+    </listeners>
+    <test name="ChromeTests">
+        <classes>
+            <class name="register.RegisterTests">
+                <methods>
+                <include name = "registerMaleTest"/>
+                </methods>
+            </class>
+            <class name="login.LoginTests">
+                <methods>
+                    <include name = "loginMaleTest"/>
+                </methods>
+            </class>
+            <class name="search.SearchTests">
+                <methods>
+                    <include name = "searchTestWithContainedWord"/>
+                </methods>
+            </class>
+            <class name="shoppingcart.ShoppingCartTests">
+                <methods>
+                    <include name = "testAddingItemAndCheckingCount"/>
+                </methods>
+            </class>
+            <class name="wishlist.WishListTests">
+                <methods>
+                    <include name = "testAddingItemAndCheckingCount"/>
+                </methods>
+            </class>
+            <class name="followus.FollowUsTests">
+            </class>
+            <class name="sliders.SlidersTests">
+            </class>
+        </classes>
+    </test>
+</suite>
